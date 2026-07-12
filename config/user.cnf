@@ -7,10 +7,10 @@ innodb_dedicated_server = OFF
 
 # 2. Adjust pool size to exactly 50% of your Render RAM 
 # (e.g., 256M if you have a 512MB RAM plan, 512M if you have 1GB RAM)
-innodb_buffer_pool_size = 256M
+innodb_buffer_pool_size = 1G
 
 # 3. Prevent thread bloat from active traffic spikes
-max_connections = 40
+max_connections = 85
 
 # 4. HUGE WIN: Instantly reclaims 100MB-150MB of baseline container RAM
 performance_schema = OFF
